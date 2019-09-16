@@ -27,6 +27,7 @@ def run():
 		cThread.deamon = True
 		cThread.start()
 		connections.append(c)
+		print(a)
 		print(str(a[0]) + ':' + str(a[1]), 'connected')
 
 run()
