@@ -14,7 +14,8 @@ def sendMsg():
 
 
 def client(address):
-	s.connect((address, 4444))
+        port = int(input('port: '))
+	s.connect((address, port))
 
 	iThread = threading.Thread(target=sendMsg)
 	iThread.deamon = True
