@@ -30,20 +30,6 @@ def client(address):
 			iThread.stop()
 			sys.exit()
 
-"""def screen():
-	screen = Tk()
-	screen.title('communicator')
-
-	txt_input = ''
-	print(txt_input)
-
-	#screen.geometry("445x500")
-	Display = Entry(screen, font=('arial', 30), justify='right', textvariable=txt_input)
-	Display.grid(columnspan = 3)
-	BtnEnt = Button(screen, fg='blue', font=('arial',30), text='ENTER', command=sendMsg(txt_input))
-	BtnEnt.grid(row=1, columnspan=4) 
-	screen.mainloop()"""
-
 if len(sys.argv) > 1:
 	username = input('Podaj swój nick: ')
 	client(sys.argv[1])
