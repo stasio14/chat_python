@@ -14,7 +14,7 @@ def sendMsg():
 
 
 def client(address):
-        port = int(input('port: '))
+    port = int(input('port: '))
 	s.connect((address, port))
 
 	iThread = threading.Thread(target=sendMsg)
