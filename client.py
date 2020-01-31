@@ -7,7 +7,7 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 def sendMsg():
 	while True:
 		try:
-			s.send(bytes(username + '> ' + input(''), "utf-8"))
+			s.send(bytes(input(''), "utf-8"))
 		except Exception as e:
 			print("Error {}".format(str(e)))
 			break
@@ -31,7 +31,6 @@ def client(address):
 			sys.exit()
 
 if len(sys.argv) > 1:
-	username = input('Podaj swój nick: ')
 	client(sys.argv[1])
 else:
 	print("Nie można połączyć z serwerem. Sprawdź IP serwera")
